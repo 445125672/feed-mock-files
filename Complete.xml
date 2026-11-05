@@ -1,0 +1,29 @@
+<AmazonEnvelope>
+  <Header>
+    <DocumentVersion>1.02</DocumentVersion>
+    <MerchantIdentifier>GIGACLOUD_DRP_1720000000000</MerchantIdentifier>
+  </Header>
+  <MessageType>ProcessingReport</MessageType>
+  <Message>
+    <MessageID>1</MessageID>
+    <ProcessingReport>
+      <DocumentTransactionID>123456789012</DocumentTransactionID>
+      <StatusCode>Complete</StatusCode>   <!-- Complete / Successful -->
+      <ProcessingSummary>
+        <MessagesProcessed>10</MessagesProcessed>
+        <MessagesSuccessful>9</MessagesSuccessful>
+        <MessagesWithError>1</MessagesWithError>
+        <MessagesWithWarning>0</MessagesWithWarning>
+      </ProcessingSummary>
+      <Result>                            <!-- 仅报错/警告时存在，可多条 -->
+        <MessageID>5</MessageID>
+        <ResultCode>Error</ResultCode>     <!-- Error / Warning -->
+        <ResultMessageCode>90214</ResultMessageCode>
+        <ResultDescription>Invalid shipment data provided - the order is already confirmed as shipped.</ResultDescription>
+        <AdditionalInfo>
+          <AmazonOrderID>111-2222222-3333333</AmazonOrderID>
+        </AdditionalInfo>
+      </Result>
+    </ProcessingReport>
+  </Message>
+</AmazonEnvelope>
