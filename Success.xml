@@ -21,7 +21,7 @@
         <ResultMessageCode>90214</ResultMessageCode>
         <ResultDescription>Invalid shipment data provided - the order is already confirmed as shipped.</ResultDescription>
         <AdditionalInfo>
-          <AmazonOrderID>111-2222222-3333333</AmazonOrderID>
+          <AmazonOrderID>HD_01141951EWF_drop</AmazonOrderID>
         </AdditionalInfo>
       </Result>
     </ProcessingReport>
